@@ -1,0 +1,53 @@
+{
+  "name": "benditocheiro",
+  "description": "Bendito Cheiro Art",
+  "author": "buenavistalab softwares",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saulofilho/benditocheiro"
+  },
+  "dependencies": {
+    "gatsby": "^4.10.3",
+    "gatsby-plugin-dark-mode": "^1.1.2",
+    "gatsby-plugin-google-analytics": "^4.10.0",
+    "gatsby-plugin-manifest": "^4.10.2",
+    "gatsby-plugin-netlify-cms": "^6.10.0",
+    "gatsby-plugin-offline": "^5.10.2",
+    "gatsby-plugin-react-helmet": "^5.10.0",
+    "gatsby-plugin-sass": "^5.10.2",
+    "gatsby-remark-emojis": "^0.4.3",
+    "gatsby-remark-prismjs": "^6.10.0",
+    "gatsby-source-filesystem": "^4.10.1",
+    "gatsby-transformer-remark": "^5.10.2",
+    "lodash": "^4.17.21",
+    "netlify-cms-app": "^2.15.70",
+    "sass": "^1.49.9",
+    "prismjs": "^1.27.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-feather": "^2.0.9",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.1"
+  },
+  "homepage": "https://github.com/saulofilho/benditocheiro",
+  "keywords": [
+    "gatsby",
+    "netlify cms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulofilho/benditocheiro"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}

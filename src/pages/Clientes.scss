@@ -1,0 +1,34 @@
+.clientes-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--staat);
+  padding-top: 150px;
+}
+.nossos-clientes-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  padding-top: 50px;
+}
+.nossos-clientes-logos img {
+  width: 180px;
+}
+@media (max-width: 576px) {
+  .nossos-clientes-logos {
+    display: grid;
+    grid-template-columns: unset;
+    grid-gap: 5px;
+    padding-top: 50px;
+  }
+  .nossos-clientes-logos img {
+    padding-bottom: 50px;
+  }
+  .clientes-wrapper {
+    padding-top: 100px;
+  }
+}

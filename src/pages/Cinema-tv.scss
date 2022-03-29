@@ -1,0 +1,45 @@
+.cinematv-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--staat);
+  padding-top: 150px;
+}
+.cine-header-wrapper {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.cinema-project-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.cinema-project-wrapper img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.cinema-project-wrapper .cinema-italic {
+  width: 100%;
+  font-family: var(--inria-sans);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.cinema-project-wrapper .cinema-text {
+  width: 100%;
+  font-family: var(--inria-sans);
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .cinematv-wrapper {
+    padding-top: 100px;
+  }
+}

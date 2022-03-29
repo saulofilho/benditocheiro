@@ -1,0 +1,111 @@
+.header-blog {
+  height: auto;
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  z-index: 9;
+  margin-bottom: 50px;
+}
+.header-blog a {
+  cursor: pointer;
+}
+.header-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-wrapper-active {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+}
+.header-left {
+  width: 100%;
+}
+.header-right-desk {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.header-right-desk a {
+  font-family: var(--staat);
+  font-size: 16px;
+  color: var(--green);
+  padding-right: 20px;
+}
+.header-right-desk a:hover {
+  color: var(--dark-gray);
+}
+.header-right-desk a:last-child {
+  padding-right: 0px;
+}
+.header-right-desk ul li svg,
+.header-right-mob ul li svg {
+  position: relative;
+  top: 6px;
+  left: 2px;
+}
+.header-right-desk a:hover {
+  font-style: italic;
+  font-weight: bolder;
+}
+.logo-header {
+  width: 100%;
+  height: auto;
+}
+.logo-header a {
+  font-family: var(--staat);
+  font-size: 24px;
+  color: var(--green);
+}
+.logo-header img {
+  max-width: 100%;
+  width: 80px;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 800px) {
+  .header-blog .btns-wrapper {
+    display: flex;
+    flex-flow: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .menu-button {
+    display: flex;
+  }
+  .menu-button .x {
+    margin-top: 25px;
+  }
+  .header-right-desk {
+    display: none;
+  }
+  .header-wrapper-active .header-right-desk {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  .header-wrapper-active {
+    justify-content: flex-start;
+  }
+  .layer {
+    background: var(--light-blue);
+    z-index: 99;
+    width: 40%;
+  }
+  .header-right-desk a {
+    padding-right: 0;
+  }
+}

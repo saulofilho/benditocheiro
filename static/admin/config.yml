@@ -1,0 +1,57 @@
+locale: 'pt'
+
+backend:
+  name: git-gateway
+  branch: main
+
+display_url: https://benditocheiro.art
+logo_url: https://raw.githubusercontent.com/buenabistalab/bvl_cms/main/static/assets/logos/logo.png
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: blog
+    label: Projeto
+    folder: _data/blog
+    slug: '{{day}}-{{month}}-{{year}}-{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {
+          name: template,
+          label: Template,
+          widget: hidden,
+          default: BlogPost,
+        }
+      - { name: date, label: Data, widget: datetime, dateFormat: "DD.MM.YYYY", required: false }
+      - { name: title, label: Título, widget: string, required: false }
+      - { name: img, label: Imagem, widget: image, required: false }
+      - { name: body, label: Texto, widget: markdown, required: false }
+      - { name: vimeo, label: Vídeo, widget: markdown, required: false }
+      - {
+          name: featured,
+          label: Destaque na home,
+          widget: select,
+          required: false,
+          options: ['img', 'vimeo']
+        }
+  - name: cinematv
+    label: Cinema e TV
+    folder: _data/cinematv
+    slug: '{{day}}-{{month}}-{{year}}-{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {
+          name: template,
+          label: Template,
+          widget: hidden,
+          default: CinemaTV,
+        }
+      - { name: img, label: Imagem, widget: image, required: false }
+      - { name: title, label: Título, widget: string, required: false }
+      - { name: subtitle, label: SubTítulo, widget: string, required: false }
+      - { name: body, label: Texto, widget: markdown, required: false }
