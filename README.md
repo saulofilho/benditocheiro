@@ -32,7 +32,7 @@ $ yarn start
 $ yarn build
 ```
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9e924a1b-1e19-4fe3-b81b-bc0e5ffef77d/deploy-status)](https://app.netlify.com/sites/bvl-cms/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4bc611fc-44d5-4e9b-8ab6-170a2c1f8273/deploy-status)](https://app.netlify.com/sites/benditocheiro/deploys)
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
