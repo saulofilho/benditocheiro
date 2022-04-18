@@ -1,9 +1,9 @@
 import React from "react"
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { withPrefix, graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import Home from '../components/Home'
-import QuemSomos from '../components/QuemSomos'
+import About from '../components/About'
 import Contato from '../components/Contato'
 import PostLink from "../components/PostLink"
 
@@ -23,9 +23,10 @@ const IndexPage = ({
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
+        <script src={withPrefix('script.js')} type="text/javascript" />
       </Helmet>
       <Home />
-      <QuemSomos />
+      <About />
       <div className="trabalhos-home-index container">
         <h1>
           Lorem Ipsum

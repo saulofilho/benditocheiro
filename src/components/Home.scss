@@ -1,55 +1,39 @@
 .home-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: var(--staat);
-  padding: 150px 350px;
 }
-.home-wrapper h3 {
-  font-family: var(--inria-sans);
+.home-wrapper h1 {
+  font-family: var(--anton);
   text-transform: uppercase;
-  font-size: larger;
-  color: #fff !important;
+  font-size: 200px;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 185px;
+  mix-blend-mode: difference;
 }
-.home-wrapper img {
-  max-width: 100%;
-  width: 500px;
-}
-#video-hero {
-  width: 100vw;
-  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-  min-height: 100vh;
-  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.vimeo-wrapper {
+.canvas-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
 }
-@media (max-width: 900px) {
-  .home-wrapper {
-    padding: 0 0;
-  }
+#canvas-screen {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
-@media (max-width: 900px) {
-  .home-wrapper h3 {
-    text-transform: uppercase;
-    font-size: unset;
-  }
-  .home-wrapper img {
-    width: 300px;
+@media (max-width: 576px) {
+  .home-wrapper h1 {
+    font-size: 100px;
+    line-height: 90px;
   }
 }

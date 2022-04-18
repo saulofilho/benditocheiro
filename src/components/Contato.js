@@ -10,7 +10,7 @@ const Contato = () => {
       <p>
         1914 translation by H. Rackham?
       </p>
-      <div class="form-row">
+      <div className="form-row">
         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/contato-ok">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
