@@ -50,7 +50,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {template: {eq: "BlogPost"}}}
+      filter: {frontmatter: {template: {eq: "ProdutoPost"}}}
       sort: { order: DESC, fields: [frontmatter___date] }
       ) {
       edges {
@@ -63,10 +63,10 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "DD.MM.YYYY")
-            title
             img
-            vimeo
-            featured
+            title
+            categoria
+            preco
           }
         }
       }

@@ -5,14 +5,12 @@ import './PostLink.scss'
 const PostLink = ({ post }) => (
   <div className="post-item">
     <Link to={post.fields.slug} className="post-link">
-      {post.frontmatter.featured === 'img' ?
-        <img src={post.frontmatter.img} alt="" />
-        : <div
-          className="vimeo-home"
-          dangerouslySetInnerHTML={{ __html: post.frontmatter.vimeo }}
-        />
-      }
+      <img src={post.frontmatter.img} alt="" />
     </Link>
+    <p>{post.frontmatter.title}</p>
+    <p>{post.frontmatter.categoria}</p>
+    <p>{post.excerpt}</p>
+    <p>R$ {post.frontmatter.preco}</p>
   </div>
 )
 export default PostLink

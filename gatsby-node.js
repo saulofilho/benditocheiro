@@ -17,6 +17,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             id
             frontmatter {
               title
+              categoria
+              preco
             }
             fields {
               slug

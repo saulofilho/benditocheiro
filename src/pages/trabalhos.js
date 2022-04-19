@@ -38,7 +38,7 @@ export default Trabalhos
 export const pageQuery = graphql`
   query TrabalhosQuery {
     allMarkdownRemark(
-      filter: {frontmatter: {template: {eq: "BlogPost"}}}
+      filter: {frontmatter: {template: {eq: "ProdutoPost"}}}
       sort: { order: DESC, fields: [frontmatter___date] }
       ) {
       edges {

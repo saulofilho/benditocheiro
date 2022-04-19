@@ -1,15 +1,13 @@
 import React from 'react'
 import './About.scss'
 
-import Surf from '../../static/assets/about/16-publi.jpg'
-
 const About = () => {
   return (
     <div className="sobre-wrapper container">
       <h1>Sobre a marca bendito cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">
-          <img src={Surf} alt="sobre somos nós foto" className="img-festa" />
+          {/* <img src={Surf} alt="sobre somos nós foto" className="img-festa" /> */}
         </div>
         <div className="sobre-col">
           <p>
