@@ -2,6 +2,7 @@
 template: ProdutoPost
 date: 2022-04-19T13:18:24.423Z
 title: Shampoo especial
+categoria: Coleção Frida
 img: /assets/17-46-99-49-71-90-5-11z.jpg
 preco: 19,99
 ---
