@@ -1,5 +1,5 @@
 const description = [
-  "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t1.png",
+  "https://raw.githubusercontent.com/saulofilho/benditocheiro/master/static/assets/logos/logo.png",
   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t2.png",
   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t3.png",
   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t4.png",
