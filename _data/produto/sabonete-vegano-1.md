@@ -3,6 +3,8 @@ template: ProdutoPost
 date: 2022-04-19T13:25:27.626Z
 title: Sabonete vegano
 categoria: Linha Vegana
+categoria_produto:
+  - categoria_list: Exemplo Categoria
 img: /assets/default-img.jpg
 preco: 29,99
 ---
