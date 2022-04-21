@@ -37,9 +37,7 @@ const Header = () => {
           </div>
         </div>
         <div className="header-right-desk">
-          <Link to={"/trabalhos"}>Lorem 1</Link>
-          <Link to={"/clientes"}>Lorem 2</Link>
-          <Link to={"/cinema-tv"}>Lorem 3</Link>
+          <Link to={"/produtos"}>produtos</Link>
           <ThemeChanger />
         </div>
         <button

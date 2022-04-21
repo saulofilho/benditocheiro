@@ -4,6 +4,7 @@ import { withPrefix, graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import Home from '../components/Home'
 import About from '../components/About'
+import Carousel from "../components/Carousel"
 import Contato from '../components/Contato'
 import PostLink from "../components/PostLink"
 
@@ -27,6 +28,7 @@ const IndexPage = ({
       </Helmet>
       <Home />
       <About />
+      <Carousel />
       <div className="trabalhos-home-index container">
         <h1>
           Lorem Ipsum

@@ -27,7 +27,28 @@ collections:
         }
       - { name: date, label: Data, widget: datetime, dateFormat: "DD.MM.YYYY", required: false }
       - { name: title, label: Nome do Produto, widget: string, required: false }
-      - { name: categoria, label: Categoria do Produto, widget: string, required: false }
+      - label: Categoria do Produto
+        name: categoria_produto
+        widget: list
+        max: 1
+        required: false
+        fields:
+          - label: Categoria
+            name: categoria_list
+            widget: relation
+            collection: categorias
+            search_fields: ['title']
+            value_field: 'title'
       - { name: img, label: Imagem do Produto, widget: image, required: false }
       - { name: body, label: Texto sobre o Produto, widget: markdown, required: false }
       - { name: preco, label: Preço do Produto, widget: string, required: false }
+  - name: categorias
+    label: Criar Categoria de Produto
+    editor:
+      preview: false
+    folder: _data/categoria
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - { label: Nome da Categoria, name: title, widget: string }
+

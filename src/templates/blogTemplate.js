@@ -31,7 +31,7 @@ export default function Template({
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
             <div className="voltar">
-              <Link to="/trabalhos">⟵ Voltar</Link>
+              <Link to="/produtos">⟵ Voltar</Link>
             </div>
           </div>
         </article>
