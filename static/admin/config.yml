@@ -42,8 +42,20 @@ collections:
       - { name: img, label: Imagem do Produto, widget: image, required: false }
       - { name: body, label: Texto sobre o Produto, widget: markdown, required: false }
       - { name: preco, label: Preço do Produto, widget: string, required: false }
+      - label: Imagens do Produto
+        name: img_produto
+        widget: list
+        required: false
+        fields:
+          - label: Imagens do Produto
+            name: img_list
+            widget: image
+            choose_url: false
+            media_library:
+              config:
+                multiple: false
   - name: categorias
-    label: Criar Categoria de Produto
+    label: Categoria de Produto
     editor:
       preview: false
     folder: _data/categoria
@@ -51,4 +63,3 @@ collections:
     create: true
     fields:
       - { label: Nome da Categoria, name: title, widget: string }
-

@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Bendito Cheiro Art`,
+    title: `BENDITO CHEIRO ARTESANAL`,
     description: `Produtos Artesanais`,
     siteUrl: `https://benditocheiro.art`,
     home: {
-      title: `Bendito Cheiro Art`,
+      title: `BENDITO CHEIRO ARTESANAL`,
       description: `Produtos Artesanais feitos com amor e carinho.`,
     }
   },
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bendito Cheiro Art`,
-        short_name: `Bendito Cheiro Art`,
+        name: `BENDITO CHEIRO ARTESANAL`,
+        short_name: `BENDITO CHEIRO ARTESANAL`,
         start_url: `/`,
         background_color: `#0d518c`,
         theme_color: `#0d518c`,
