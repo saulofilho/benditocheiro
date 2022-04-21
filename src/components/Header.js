@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import 'prismjs/themes/prism-okaidia.css'
 import ThemeChanger from "./ThemeChanger"
-
-// import Logo from '../../static/assets/logos/logo.png'
 import './Header.scss'
 
 const Header = () => {
@@ -19,7 +17,7 @@ const Header = () => {
         <div className="header-left">
           <div className="logo-header">
             <Link to={"/"}>
-              <img alt="logo" id="img-bg" />
+              <img id="img-bg" />
             </Link>
           </div>
         </div>
