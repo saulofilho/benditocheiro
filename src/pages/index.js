@@ -20,6 +20,7 @@ const IndexPage = ({
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
         <script src={withPrefix('script.js')} type="text/javascript" />
+        <script src={withPrefix('randomImgs.js')} type="text/javascript" />
       </Helmet>
       <Home />
       <About />

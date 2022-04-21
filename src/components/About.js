@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.scss'
+import Chapada from '../../static/assets/default-img.jpg'
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <h1>Sobre a marca bendito cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">
-          {/* <img src={Surf} alt="sobre somos nós foto" className="img-festa" /> */}
+          <img src={Chapada} alt="sobre somos nós foto" className="img-festa" />
         </div>
         <div className="sobre-col">
           <p>

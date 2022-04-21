@@ -11,19 +11,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper container';
 
-  // const description = [
-  //   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t1.png",
-  //   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t2.png",
-  //   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t3.png",
-  //   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t4.png",
-  //   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t5.png",
-  //   "https://raw.githubusercontent.com/buenavistalab/buena-vista-lab/master/assets/t6.png"
-  // ];
-
-  // const size = description.length;
-  // const magic = Math.floor(size * Math.random());
-  // document.getElementById("img-bg").src = description[magic];
-
   return (
     <header
       className="header-blog"
@@ -32,7 +19,7 @@ const Header = () => {
         <div className="header-left">
           <div className="logo-header">
             <Link to={"/"}>
-              <img src={Logo} alt="logo blog" />
+              <img src={Logo} alt="logo blog" id="img-bg" />
             </Link>
           </div>
         </div>

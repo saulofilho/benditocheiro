@@ -37,6 +37,34 @@
   align-items: flex-start;
   flex-flow: row;
 }
+.form-col {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+.contato-wrapper .sobre-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+.contato-wrapper h1 {
+  font-family: var(--barlow);
+  font-size: 100px;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 80px;
+  padding-left: 25%;
+}
+.contato-wrapper p {
+  font-family: var(--open-sans);
+  font-size: 18px;
+}
 form {
   display: flex;
   justify-content: center;
@@ -91,6 +119,11 @@ form button[type=submit]:hover {
   font-family: var(--staat);
 }
 @media (max-width: 576px) {
+  .contato-wrapper h1 {
+    font-size: 60px;
+    line-height: 50px;
+    padding-left: 15%;
+  }
   .contato-wrapper {
     padding-top: 100px;
   }
