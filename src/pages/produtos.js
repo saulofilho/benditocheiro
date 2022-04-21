@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
-import './Trabalhos.scss'
+import './Produtos.scss'
 import PostSection from "../components/PostSection"
 
 const Trabalhos = ({
@@ -19,8 +19,8 @@ const Trabalhos = ({
 
   return (
     <Layout>
-      <div className="trabalhos-home container">
-        <div className="trabalhos-wrapper">
+      <div className="produtos-home container">
+        <div className="produtos-wrapper">
           <h1>
             Lorem Ipsum
           </h1>

@@ -1,4 +1,4 @@
-.trabalhos-home {
+.produtos-home {
   width: 100%;
   height: auto;
   display: flex;
@@ -8,23 +8,12 @@
   font-family: var(--staat);
   padding-top: 150px;
 }
-.trabalhos-home-index {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--staat);
-  padding-top: 150px;
-  text-align: center;
-}
-.trabalhos-wrapper {
+.produtos-wrapper {
   text-align: center;
   padding-bottom: 50px;
 }
 @media (max-width: 576px) {
-  .trabalhos-home {
+  .produtos-home {
     padding-top: 100px;
   }
 }

@@ -34,74 +34,88 @@ const Carousel = () => {
   };
 
   return (
-    <section className="carousel-wrapper">
-        <Slider {...settings}>
-          <div>
-            <div
-              className="car-items-wrapper"
-              style={{
-                backgroundImage: `url(${Chapada})`
-              }}
-              alt="foto da chapada dos guimaraes"
-            >
-            </div>
-            <p className="car-text">
+    <section>
+      <div className="carousel-wrapper container">
+        <h1>Como funciona a bendito cheiro</h1>
+        <div className="sobre-row">
+          <div className="sobre-col">
+          </div>
+          <div className="sobre-col">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+              veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Slider {...settings}>
+        <div>
+          <div
+            className="car-items-wrapper"
+            style={{
+              backgroundImage: `url(${Chapada})`
+            }}
+            alt="foto da chapada dos guimaraes"
+          >
+          </div>
+          <p className="car-text">
             Chapada dos Guimarães
-            </p>
+          </p>
+        </div>
+        <div>
+          <div
+            className="car-items-wrapper"
+            style={{
+              backgroundImage: `url(${Nobres})`
+            }}
+            alt="foto de Nobres"
+          >
           </div>
-          <div>
-            <div
-              className="car-items-wrapper"
-              style={{
-                backgroundImage: `url(${Nobres})`
-              }}
-              alt="foto de Nobres"
-            >
-            </div>
-            <p className="car-text">
+          <p className="car-text">
             Nobres
-            </p>
+          </p>
+        </div>
+        <div>
+          <div
+            className="car-items-wrapper"
+            style={{
+              backgroundImage: `url(${Araguaia})`
+            }}
+            alt="foto do Araguaia"
+          >
           </div>
-          <div>
-            <div
-              className="car-items-wrapper"
-              style={{
-                backgroundImage: `url(${Araguaia})`
-              }}
-              alt="foto do Araguaia"
-            >
-            </div>
-            <p className="car-text">
+          <p className="car-text">
             Alto Araguaia
-            </p>
+          </p>
+        </div>
+        <div>
+          <div
+            className="car-items-wrapper"
+            style={{
+              backgroundImage: `url(${Barra})`
+            }}
+            alt="foto do Barra"
+          >
           </div>
-          <div>
-            <div
-              className="car-items-wrapper"
-              style={{
-                backgroundImage: `url(${Barra})`
-              }}
-              alt="foto do Barra"
-            >
-            </div>
-            <p className="car-text">
+          <p className="car-text">
             Barra do Garças
-            </p>
+          </p>
+        </div>
+        <div>
+          <div
+            className="car-items-wrapper"
+            style={{
+              backgroundImage: `url(${Pantanal})`
+            }}
+            alt="foto do Pantanal"
+          >
           </div>
-          <div>
-            <div
-              className="car-items-wrapper"
-              style={{
-                backgroundImage: `url(${Pantanal})`
-              }}
-              alt="foto do Pantanal"
-            >
-            </div>
-            <p className="car-text">
+          <p className="car-text">
             Pantanal
-            </p>
-          </div>
-        </Slider>
+          </p>
+        </div>
+      </Slider>
     </section>
   )
 }

@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import Home from '../components/Home'
 import About from '../components/About'
 import Carousel from "../components/Carousel"
-import Posts from "../components/Posts"
+import Products from "../components/Products"
 import Contato from '../components/Contato'
 
 const IndexPage = ({
@@ -24,7 +24,7 @@ const IndexPage = ({
       <Home />
       <About />
       <Carousel />
-      <Posts post={edges} />
+      <Products post={edges} />
       <Contato />
     </Layout>
   )
