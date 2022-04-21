@@ -5,8 +5,8 @@ import Layout from "../components/Layout"
 import Home from '../components/Home'
 import About from '../components/About'
 import Carousel from "../components/Carousel"
+import Posts from "../components/Posts"
 import Contato from '../components/Contato'
-import PostLink from "../components/PostLink"
 
 const IndexPage = ({
   data: {
@@ -14,11 +14,6 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   }
 }) => {
-
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-
   return (
     <Layout>
       <Helmet>
@@ -29,14 +24,7 @@ const IndexPage = ({
       <Home />
       <About />
       <Carousel />
-      <div className="trabalhos-home-index container">
-        <h1>
-          Lorem Ipsum
-        </h1>
-        <div className="posts-list">
-          {Posts}
-        </div>
-      </div>
+      <Posts post={edges} />
       <Contato />
     </Layout>
   )
