@@ -3,7 +3,7 @@ template: ProdutoPost
 date: 2022-04-19T13:25:27.626Z
 title: Sabonete vegano
 categoria_produto:
-  - categoria_list: Exemplo Categoria
+  - categoria_list: Coleção Frida
 img: /assets/default-img.jpg
 preco: 29,99
 categoria: Linha Vegana
