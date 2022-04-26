@@ -17,24 +17,32 @@ export default function Template({
         <meta name="description" content={post.frontmatter.metaDescription} />
       </Helmet>
       <div className="Blog-post container">
-        {post.frontmatter.img && <div className="img-post"
-          style={{
-            backgroundImage: `url(${post.frontmatter.img})`
-          }} />}
-        <article className="post">
-          <h1>
-            {post.frontmatter.title}
-          </h1>
-          <div className="site-wrapper">
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
-            <div className="voltar">
-              <Link to="/produtos">⟵ Voltar</Link>
+        <article className="post-row">
+          <div className="post-col">
+            <div className="post-imgs">
+              <img src={post.frontmatter.img} alt={post.frontmatter.img} />
+              {post.frontmatter.img_produto.map(post => (
+                <img src={post.img_list} alt={post.img_list} key={post.img_list} />
+              ))}
+            </div>
+          </div>
+          <div className="post-col post-sticky">
+            <h1>
+              {post.frontmatter.title}
+            </h1>
+            <p>{post.frontmatter.categoria}</p>
+            <p>{post.frontmatter.preco}</p>
+            <div className="site-wrapper">
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: post.html }}
+              />
             </div>
           </div>
         </article>
+        <div className="voltar">
+          <Link to="/produtos">⟵ Voltar</Link>
+        </div>
       </div>
     </Layout>
   )
@@ -50,6 +58,9 @@ export const pageQuery = graphql`
         title
         categoria
         preco
+        img_produto {
+          img_list
+        }
       }
     }
   }

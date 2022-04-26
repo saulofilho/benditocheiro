@@ -4,26 +4,27 @@ import { Menu, X } from 'react-feather'
 import 'prismjs/themes/prism-okaidia.css'
 import ThemeChanger from "./ThemeChanger"
 import './Header.scss'
+import Logo from '../../static/assets/logos/logo.png'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper container';
 
   return (
-    <header
-      className="header-blog"
-    >
+    <header className="header-blog">
       <div className={menuClassNames}>
         <div className="header-left">
           <div className="logo-header">
             <Link to={"/"}>
-              <img id="img-bg" />
+              <img src={Logo} alt="logo blog" id="img-bg" />
             </Link>
           </div>
         </div>
+        <ThemeChanger />
         <div className="header-right-desk">
+          <Link to={"/#sobre"}>sobre</Link>
           <Link to={"/produtos"}>produtos</Link>
-          <ThemeChanger />
+          <Link to={"/#contato"}>contato</Link>
         </div>
         <button
           className="button-blank menu-button"
@@ -34,9 +35,9 @@ const Header = () => {
               color={"var(--green)"}
               className="x"
             />
-              :
+            :
             <Menu
-              color={"var(--blue)"}
+              color={"var(--green)"}
               className="menu"
             />}
         </button>

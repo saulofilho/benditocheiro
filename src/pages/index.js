@@ -51,13 +51,16 @@ export const pageQuery = graphql`
           }
           id
           html
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 150)
           frontmatter {
             date(formatString: "DD.MM.YYYY")
             img
             title
             categoria
             preco
+            img_produto {
+              img_list
+            }
           }
         }
       }

@@ -52,8 +52,8 @@
     padding-top: 100px;
   }
   .sobre-wrapper h1 {
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 35px;
     padding-left: 15%;
   }
   .sobre-row {
@@ -67,5 +67,8 @@
   }
   .sobre-col {
     align-items: center;
+  }
+  .sobre-wrapper .sobre-col p {
+    font-size: 14px;
   }
 }

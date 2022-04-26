@@ -26,9 +26,10 @@
   margin-bottom: 20px;
   width: 100%;
 }
-.contato-text img {
+.contato-wrapper img {
   max-width: 100%;
   width: 100%;
+  padding-right: 20px;
 }
 .form-row {
   width: 100%;
@@ -120,14 +121,23 @@ form button[type=submit]:hover {
 }
 @media (max-width: 576px) {
   .contato-wrapper h1 {
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 35px;
     padding-left: 15%;
   }
   .contato-wrapper {
     padding-top: 100px;
   }
   .form-row {
-    flex-flow: column;
+    flex-flow: column-reverse;
+  }
+  .contato-wrapper .sobre-col p {
+    font-size: 14px;
+  }
+  .contato-wrapper img {
+    padding-top: 50px;
+    max-width: 100%;
+    width: 100%;
+    padding-right: unset;
   }
 }

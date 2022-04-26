@@ -76,6 +76,9 @@
   display: none;
 }
 @media (max-width: 800px) {
+  .header-wrapper label {
+    width: 100%;
+  }
   .header-blog .btns-wrapper {
     display: flex;
     flex-flow: column;

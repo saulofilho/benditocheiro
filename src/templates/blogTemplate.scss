@@ -4,36 +4,41 @@
 .Blog-post img {
   width: 100%;
 }
-.post h1 {
-  font-family: var(--staat);
-  color: var(--dark-gray);
-  font-size: 1.5rem;
-  font-weight: bolder;
-  padding: 0 0 30px 0;
-  line-height: 2rem;
-  text-align: center;
+.post-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  padding: 50px 0;
+}
+.post-col {
+  font-family: var(--open-sans);
+  font-size: 18px;
+}
+.post-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  padding-left: 20px;
 }
 .blog-post-content p:first-child {
   text-indent: 5rem;
 }
 .blog-post-content p {
-  font-family: var(--staat);
+  font-family: var(--open-sans);
   color: var(--dark-gray);
   font-size: 1rem;
   line-height: 1.7rem;
   padding-bottom: 30px;
 }
-.blog-post-content h4 {
-  font-family: var(--inria-sans);
-  color: var(--dark-gray);
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-}
 .blog-post-content p strong {
   font-weight: bolder;
 }
 .blog-post-content a {
-  font-family: var(--staat);
+  font-family: var(--open-sans);
   color: var(--dark-gray);
   font-size: 1rem;
   line-height: 1.7rem;
@@ -44,26 +49,25 @@
   padding: 30px 0;
 }
 .voltar a {
-  font-family: var(--inria-sans);
+  font-family: var(--open-sans);
   color: var(--light-gray);
-  font-weight: bolder;
   font-size: 1rem;
   padding-bottom: 30px;
 }
 .voltar a:hover {
-  color: var(--dark-gray);
-  font-style: italic;
+  font-weight: bolder;
+  text-decoration: unset;
 }
 .post-date {
   text-align: center;
-  font-family: var(--inria-sans);
+  font-family: var(--open-sans);
   color: var(--light-gray);
   font-weight: bolder;
   font-size: 1rem;
   padding-bottom: 20px;
 }
 .post-fonte {
-  font-family: var(--inria-sans);
+  font-family: var(--open-sans);
   color: var(--light-gray);
   font-weight: bolder;
   font-size: 1rem;
@@ -73,15 +77,22 @@
   .Blog-post {
     padding-top: 100px;
   }
-  .post h1 {
-    text-indent: 0;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+  .post-row {
+    flex-flow: column-reverse;
+  }
+  .post-col {
+    align-items: center;
   }
   .blog-post-content p:first-child {
     text-indent: 0;
   }
   .blog-post-content p {
     font-size: 1rem;
+  }
+  .post-sticky {
+    position: unset;
+    position: unset;
+    top: unset;
+    padding-left: unset;
   }
 }

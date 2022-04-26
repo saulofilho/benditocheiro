@@ -4,7 +4,7 @@ import Chapada from '../../static/assets/default-img.jpg'
 
 const About = () => {
   return (
-    <div className="sobre-wrapper container">
+    <div className="sobre-wrapper container" id="sobre">
       <h1>Sobre a marca bendito cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">

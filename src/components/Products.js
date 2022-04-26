@@ -8,7 +8,7 @@ const Products = ({ post }) => {
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return (
-    <div className="products-wrapper container">
+    <div className="products-wrapper container" id="produtos">
       <h1>Produtos bendito cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">

@@ -4,8 +4,8 @@ import Chapada from '../../static/assets/default-img.jpg'
 
 const Contato = () => {
   return (
-    <div className="contato-wrapper container">
-      <h1>Como funciona a bendito cheiro</h1>
+    <div className="contato-wrapper container" id="contato">
+      <h1>Entre em contato com a bendito cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">
         </div>
@@ -19,7 +19,7 @@ const Contato = () => {
       </div>
       <div className="form-row">
         <div className="form-col">
-          <img src={Chapada} alt="sobre somos nós foto" className="img-festa" />
+          <img src={Chapada} alt="sobre somos nós foto" />
         </div>
         <div className="form-col">
           <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/contato-ok">

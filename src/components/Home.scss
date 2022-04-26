@@ -31,9 +31,27 @@
   height: 90vh;
   z-index: -1;
 }
-@media (max-width: 576px) {
+@media (max-width: 900px) {
   .home-wrapper h1 {
-    font-size: 100px;
-    line-height: 90px;
+    font-size: 180px;
+    line-height: 165px;
+  }
+}
+@media (max-width: 760px) {
+  .home-wrapper h1 {
+    font-size: 160px;
+    line-height: 145px;
+  }
+}
+@media (max-width: 690px) {
+  .home-wrapper h1 {
+    font-size: 140px;
+    line-height: 130px;
+  }
+}
+@media (max-width: 590px) {
+  .home-wrapper h1 {
+    font-size: 80px;
+    line-height: 75px;
   }
 }
