@@ -21,7 +21,7 @@ export default function Template({
           <div className="post-col">
             <div className="post-imgs">
               <img src={post.frontmatter.img} alt={post.frontmatter.img} />
-              {post.frontmatter.img_produto.map(post => (
+              {post.frontmatter.img_produto && post.frontmatter.img_produto.map(post => (
                 <img src={post.img_list} alt={post.img_list} key={post.img_list} />
               ))}
             </div>
