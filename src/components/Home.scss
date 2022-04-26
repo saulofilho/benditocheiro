@@ -47,11 +47,13 @@
   .home-wrapper h1 {
     font-size: 140px;
     line-height: 130px;
+    text-align: right;
   }
 }
 @media (max-width: 590px) {
   .home-wrapper h1 {
-    font-size: 80px;
-    line-height: 75px;
+    font-size: 100px;
+    line-height: 95px;
+    text-align: right;
   }
 }
