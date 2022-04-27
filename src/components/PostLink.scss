@@ -26,11 +26,18 @@
 .post-item:hover {
   border: 2px solid var(--green);
 }
+.post-item p:hover {
+  color: var(--green);
+}
+.post-item a:hover {
+  text-decoration: none;
+}
 .post-item-title {
   font-family: var(--barlow);
   font-size: 24px;
   font-weight: lighter;
   padding-top: 5px;
+  color: var(--text-color);
 }
 .post-item-category {
   font-family: var(--barlow);
@@ -38,17 +45,20 @@
   font-weight: lighter;
   text-decoration: underline;
   padding-top: 5px;
+  color: var(--text-color);
 }
 .post-item-about {
   font-family: var(--open-sans);
   font-size: 14px;
   padding-top: 20px;
+  color: var(--text-color);
 }
 .post-item-preco {
   font-family: var(--barlow);
   font-size: 18px;
   font-weight: bolder;
   padding-top: 20px;
+  color: var(--text-color);
 }
 .post-item > .post-link {
   grid-row: 1 / -1;
