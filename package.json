@@ -8,6 +8,7 @@
     "url": "https://github.com/saulofilho/benditocheiro"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.2",
     "gatsby": "^4.10.3",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-google-analytics": "^4.10.0",
@@ -27,9 +28,13 @@
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
+    "react-hooks-paginator": "^0.5.0",
+    "react-search-field": "^2.0.1",
+    "react-select": "^5.3.1",
     "react-slick": "^0.29.0",
     "sass": "^1.49.9",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "typeco": "^1.0.0"
   },
   "devDependencies": {
     "prettier": "^2.6.1"

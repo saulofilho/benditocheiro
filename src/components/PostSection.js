@@ -7,22 +7,19 @@ const PostSection = ({
 }) => {
   return (
     <>
-      {posts.map(post => (
-        <div className="post-item-section" key={post.id}>
-          <Link to={post.fields.slug} className="post-link">
-            {post.frontmatter.title}
-            <p className="excerpt">
-              {post.excerpt}
-            </p>
-            <div>
-              {post.frontmatter.img && <div className="img-home"
-                style={{
-                  backgroundImage: `url(${post.frontmatter.img})`
-                }} />}
-            </div>
-          </Link>
-        </div>
-      ))}
+      <div className="post-item-section" >
+        {posts.map(post => (
+          <div className="post-item" key={post.id}>
+            <Link to={post.fields.slug} className="post-link">
+              <img src={post.frontmatter.img} alt="" />
+              <p className="post-item-title">{post.frontmatter.title}</p>
+              <p className="post-item-category">{post.frontmatter.categoria}</p>
+              <p className="post-item-about">{post.excerpt}</p>
+              <p className="post-item-preco">R$ {post.frontmatter.preco}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </>
   )
 }
