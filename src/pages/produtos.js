@@ -50,6 +50,8 @@ const Trabalhos = ({
 
   console.log('x------------------------------', handleSelectChange)
 
+  // https://github.com/saulofilho/green-app/blob/8667c03dedddd5e6a8191fa8d03537b8e60cc76e/src/components/GraphsData/index.js
+
   const flowering_type = [
     { value: 'Regular', label: 'Regular' },
     { value: 'Feminised', label: 'Feminised' },
