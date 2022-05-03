@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './PostSection.scss'
 import { Link } from 'gatsby'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const PostSection = ({
   posts = [],
 }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <>
-      <div className="post-item-section" >
+      <div className="post-item-section" data-aos="fade-up">
         {posts.map(post => (
           <div className="post-item" key={post.id}>
             <Link to={post.fields.slug} className="post-link">

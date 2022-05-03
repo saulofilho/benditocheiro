@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from 'react'
 import Slider from "react-slick"
 import './Carousel.scss'
 import "slick-carousel/slick/slick.css"
@@ -8,6 +8,8 @@ import Nobres from '../../static/assets/default-img.jpg'
 import Pantanal from '../../static/assets/default-img.jpg'
 import Araguaia from '../../static/assets/default-img.jpg'
 import Barra from '../../static/assets/default-img.jpg'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Carousel = () => {
   const settings = {
@@ -33,15 +35,21 @@ const Carousel = () => {
     ]
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <section>
       <div className="carousel-wrapper container">
-        <h1>Como funciona a bendito cheiro</h1>
+        <h1 data-aos="fade-up">Como funciona a bendito cheiro</h1>
         <div className="sobre-row">
           <div className="sobre-col">
           </div>
           <div className="sobre-col">
-            <p>
+            <p data-aos="fade-down">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
               veritatis et quasi architecto beatae vitae dicta sunt explicabo.

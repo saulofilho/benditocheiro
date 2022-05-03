@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.scss'
+import TypeAnimation from 'react-type-animation';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <>
       <div className="canvas-wrapper">
@@ -10,9 +19,13 @@ const Home = () => {
         </div>
       </div>
       <div className="home-wrapper container">
-        <h1>
+        <h1 data-aos="fade-right">
           BENDITO CHEIRO
-          ARTESANAL
+          <TypeAnimation
+            cursor={false}
+            sequence={['ART', 3000, 'ARTESANAL', 3000]}
+            repeat={Infinity}
+          />
         </h1>
       </div>
     </>

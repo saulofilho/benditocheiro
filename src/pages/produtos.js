@@ -6,6 +6,8 @@ import PostSection from "../components/PostSection"
 import TypeChecker from 'typeco';
 import loadable from '@loadable/component'
 import Select from 'react-select';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const SearchField = loadable(() => import('react-search-field'))
 const Paginator = loadable(() => import('react-hooks-paginator'))
@@ -61,7 +63,6 @@ const Trabalhos = ({
     return unique;
   }, []);
 
-
   const [ price, setPrice ] = useState(40);
   const handleInput = (e)=>{
     setPrice( e.target.value );
@@ -80,17 +81,23 @@ const Trabalhos = ({
     }
   }
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <Layout>
       <div className="produtos-home container">
         <div className="produtos-wrapper">
-          <h1>
+          <h1 data-aos="fade-up">
             Confira os nossos produtos
           </h1>
-          <p className="produtos-text">
+          <p className="produtos-text" data-aos="fade-down">
             The standard Lorem Ipsum passage, used since the 1500s
           </p>
-          <div className="produtos-wrapper-row">
+          <div className="produtos-wrapper-row" data-aos="fade-up">
             <div className="produtos-row">
               <div className="produtos-col produtos-col-padding">
                 <SearchField
@@ -111,16 +118,18 @@ const Trabalhos = ({
                       classNamePrefix='select-categoria'
                     />
                   </div>
-                  <div className="produtos-col">
-                    <input type="range" onInput={ handleInput } />
-                    <p className="price">Price: {price}</p>
+                  <div className="produtos-col produtos-col-range">
+                    <div className="produtos-row">
+                      <input id="myRange" type="range" onInput={handleInput} min="1" max="100" />
+                      <p className="price">Preço: {price}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {!!currentData.length ? <PostSection posts={currentData} /> : <p className="search-result-none">Nenhuma palavra-chave encontrada.</p>}
+        {!!currentData.length ? <PostSection posts={currentData}/> : <p className="search-result-none">Nenhuma palavra-chave encontrada.</p>}
         <Paginator
           totalRecords={data.length}
           pageLimit={pageLimit}

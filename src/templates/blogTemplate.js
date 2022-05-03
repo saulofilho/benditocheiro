@@ -1,14 +1,21 @@
-import React from "react"
+import React, { useEffect } from 'react'
 import Helmet from 'react-helmet';
 import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import './blogTemplate.scss'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default function Template({
   data,
 }) {
-
   const post = data.markdownRemark
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
 
   return (
     <Layout>
@@ -19,14 +26,14 @@ export default function Template({
       <div className="Blog-post container">
         <article className="post-row">
           <div className="post-col">
-            <div className="post-imgs">
+            <div className="post-imgs" data-aos="fade-up">
               <img src={post.frontmatter.img} alt={post.frontmatter.img} />
               {post.frontmatter.img_produto && post.frontmatter.img_produto.map(post => (
                 <img src={post.img_list} alt={post.img_list} key={post.img_list} />
               ))}
             </div>
           </div>
-          <div className="post-col post-sticky">
+          <div className="post-col post-sticky" data-aos="fade-down">
             <h1>
               {post.frontmatter.title}
             </h1>
