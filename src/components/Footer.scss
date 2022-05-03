@@ -1,7 +1,7 @@
 footer {
-  color: var(--green);
+  color: var(--orange);
   height: auto;
-  padding: 50px 0 0;
+  padding: 150px 0 0;
 }
 footer .infos {
   display: flex;
@@ -10,7 +10,7 @@ footer .infos {
   flex-flow: column;
 }
 footer .infos a svg:hover {
-  stroke: var(--green);
+  stroke: var(--orange);
 }
 .footer-wrapper {
   display: flex;
@@ -19,7 +19,7 @@ footer .infos a svg:hover {
   padding: 50px 15px 10px;
   font-family: var(--barlow);
   flex-flow: row;
-  border-top: 1px solid var(--green);
+  border-top: 1px solid var(--orange);
 }
 .copyright {
   font-family: var(--barlow);

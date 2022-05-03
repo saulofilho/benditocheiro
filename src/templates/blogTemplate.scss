@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 10px;
-  padding: 50px 0;
+  padding: 150px 0;
 }
 .Blog-post .post-col {
   font-family: var(--open-sans);
@@ -24,9 +24,6 @@
   position: sticky;
   top: 80px;
   padding-left: 20px;
-}
-.blog-post-content p:first-child {
-  text-indent: 5rem;
 }
 .blog-post-content p {
   font-family: var(--open-sans);
@@ -83,9 +80,6 @@
   }
   .post-col {
     align-items: center;
-  }
-  .blog-post-content p:first-child {
-    text-indent: 0;
   }
   .blog-post-content p {
     font-size: 1rem;

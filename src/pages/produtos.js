@@ -41,50 +41,82 @@ const Trabalhos = ({
     setData(getMatchedList(value))
   }
 
-  const handleSelectChange = item => {
-    setCurrentData(prevState => ({
-      ...prevState,
-      phase: item.value,
-    }));
+  const handleSelectChange = e => {
+    const filteredDates = posts.filter(a => a.frontmatter.categoria_produto.map(el => el.categoria_list).toString() === e.value);
+    setData(filteredDates);
   };
 
-  console.log('x------------------------------', handleSelectChange)
+  const addValue = posts.map(el => {
+    return {
+      ...el,
+      value: el.frontmatter.categoria_produto.map(el => el.categoria_list).toString(),
+      label: el.frontmatter.categoria_produto.map(el => el.categoria_list).toString()
+    };
+  });
 
-  // https://github.com/saulofilho/green-app/blob/8667c03dedddd5e6a8191fa8d03537b8e60cc76e/src/components/GraphsData/index.js
+  const cleanDuplicateValue = addValue.reduce((unique, o) => {
+    if (!unique.some(obj => obj.label === o.label && obj.value === o.value)) {
+      unique.push(o);
+    }
+    return unique;
+  }, []);
 
-  const flowering_type = [
-    { value: 'Regular', label: 'Regular' },
-    { value: 'Feminised', label: 'Feminised' },
-    { value: 'Autoflowering', label: 'Autoflowering' },
-    { value: 'Autoflowering Regular', label: 'Autoflowering Regular' },
-    { value: 'Fast', label: 'Fast' },
-  ];
+
+  const [ price, setPrice ] = useState(40);
+  const handleInput = (e)=>{
+    setPrice( e.target.value );
+  }
+
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      padding: 20,
+    }),
+    singleValue: (provided, state) => {
+      const opacity = state.isDisabled ? 0.5 : 1;
+      const transition = 'opacity 300ms';
+
+      return { ...provided, opacity, transition };
+    }
+  }
 
   return (
     <Layout>
       <div className="produtos-home container">
         <div className="produtos-wrapper">
           <h1>
-            Lorem Ipsum
+            Confira os nossos produtos
           </h1>
-          <p>
+          <p className="produtos-text">
             The standard Lorem Ipsum passage, used since the 1500s
           </p>
-          <div className="produtos-row">
-            <div className="produtos-col">
-              <SearchField
-                placeholder="Busque por uma palavras-chave"
-                classNames="search"
-                onChange={onSearchClickExample}
-              />
-            </div>
-            <div className="produtos-col">
-              <Select
-                id="categoria"
-                name="categoria"
-                onChange={handleSelectChange}
-                options={flowering_type}
-              />
+          <div className="produtos-wrapper-row">
+            <div className="produtos-row">
+              <div className="produtos-col produtos-col-padding">
+                <SearchField
+                  placeholder="Busque por uma palavras-chave"
+                  classNames="search"
+                  onChange={onSearchClickExample}
+                />
+              </div>
+              <div className="produtos-col produtos-col-padding">
+                <div className="produtos-row">
+                  <div className="produtos-col">
+                    <Select
+                      id="categoria"
+                      name="categoria"
+                      styles={customStyles}
+                      onChange={handleSelectChange}
+                      options={cleanDuplicateValue}
+                      classNamePrefix='select-categoria'
+                    />
+                  </div>
+                  <div className="produtos-col">
+                    <input type="range" onInput={ handleInput } />
+                    <p className="price">Price: {price}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -124,6 +156,9 @@ export const pageQuery = graphql`
             preco
             img_produto {
               img_list
+            }
+            categoria_produto {
+              categoria_list
             }
           }
         }

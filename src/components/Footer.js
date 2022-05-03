@@ -13,7 +13,7 @@ const FooterWrapper = () => {
         </div>
         <div className="infos">
           <a href="https://instagram.com/bendito-cheiro-art">
-            <Instagram color={"var(--green)"} />
+            <Instagram color={"var(--orange)"} />
           </a>
         </div>
         <div className="infos">

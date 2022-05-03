@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 :root {
-  --green: #8cffae;
+  --orange: #ffab8c;
   --blue: rgb(115, 204, 255);
   --dark-gray: rgb(92, 92, 92);
   --light-gray: rgb(192, 192, 192);
@@ -42,10 +42,10 @@ body {
   width: 0.4rem;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--green);
+  background-color: var(--orange);
 }
 ::selection {
-  background-color: var(--green);
+  background-color: var(--orange);
   color: var(--blue);
 }
 a {
@@ -128,7 +128,7 @@ body.light {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  color: var(--green);
+  color: var(--orange);
 }
 // CSS.gg icons for sun and moon
 .gg-sun {
@@ -176,26 +176,26 @@ body.light {
 }
 .gg-moon,
 .gg-moon::after {
-    display: block;
-    box-sizing: border-box;
-    border-radius: 50%
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%
 }
 .gg-moon {
-    overflow: hidden;
-    position: relative;
-    transform: rotate(-135deg) scale(var(--ggs,1));
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-bottom-color: transparent
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs,1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent
 }
 .gg-moon::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 18px;
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 2px;
-    top: 8px;
-    left: 2px
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px
 }

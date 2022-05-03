@@ -60,6 +60,9 @@ export const pageQuery = graphql`
             img_produto {
               img_list
             }
+            categoria_produto {
+              categoria_list
+            }
           }
         }
       }
