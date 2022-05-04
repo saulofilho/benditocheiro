@@ -8,7 +8,7 @@ const PostLink = ({ post }) => (
       <img src={post.frontmatter.img} alt="" />
       <p className="post-item-title">{post.frontmatter.title}</p>
       {post.frontmatter.categoria_produto && post.frontmatter.categoria_produto.map(post => (
-        <p className="post-item-category">{post.categoria_list}</p>
+        <p className="post-item-category" key={post.categoria_list}>{post.categoria_list}</p>
       ))}
       <p className="post-item-about">{post.excerpt}</p>
       <p className="post-item-preco">R$ {post.frontmatter.preco}</p>

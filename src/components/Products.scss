@@ -41,6 +41,23 @@
   text-align: left;
   width: 100%;
 }
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.products-wrapper .btn-wrapper button {
+  border: 1px solid white;
+  font-family: var(--open-sans);
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+.products-wrapper .btn-wrapper button:hover {
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
 @media (max-width: 576px) {
   .products-wrapper {
     padding-top: 100px;

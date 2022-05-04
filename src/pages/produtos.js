@@ -21,10 +21,10 @@ const Trabalhos = ({
 
   const pageLimit = 10;
 
-  const [offset, setOffset] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
   const [data, setData] = useState([...posts]);
   const [currentData, setCurrentData] = useState([]);
+  const [offset, setOffset] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     setData(data);
@@ -69,7 +69,7 @@ const Trabalhos = ({
   }
 
   const customStyles = {
-    option: (provided, state) => ({
+    option: (provided) => ({
       ...provided,
       padding: 20,
     }),

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import PostLink from "./PostLink"
 import './Products.scss'
 import AOS from 'aos';
@@ -15,6 +15,34 @@ const Products = ({ post }) => {
     });
   }, []);
 
+  const storiesPerPage = 3;
+
+  const [data, setData] = useState([...Posts]);
+  const [currentData, setCurrentData] = useState([]);
+  const [next, setNext] = useState(3);
+
+  const loopWithSlice = () => {
+    const toShow = Posts.slice(
+      currentData.length,
+      currentData.length + storiesPerPage
+    );
+    setCurrentData([...currentData, ...toShow]);
+  };
+
+  useEffect(() => {
+    setData(data);
+  }, [data]);
+
+  useEffect(() => {
+    setCurrentData(data.slice(0, storiesPerPage));
+  }, [data]);
+
+  const handleShowMorePosts = () => {
+    let loadedMore = next + storiesPerPage;
+    loopWithSlice(next, loadedMore);
+    setNext(next + storiesPerPage);
+  };
+
   return (
     <div className="products-wrapper container" id="produtos">
       <h1 data-aos="fade-up">Produtos bendito cheiro</h1>
@@ -30,8 +58,13 @@ const Products = ({ post }) => {
         </div>
       </div>
       <div className="posts-list" data-aos="fade-up">
-        {Posts}
+        {currentData}
       </div>
+      {currentData.length < Posts.length && (
+        <div className="btn-wrapper">
+          <button onClick={handleShowMorePosts}>Ver mais produtos...</button>
+        </div>
+      )}
     </div>
   )
 }
