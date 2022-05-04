@@ -101,7 +101,7 @@ const Trabalhos = ({
             <div className="produtos-row">
               <div className="produtos-col produtos-col-padding">
                 <SearchField
-                  placeholder="Busque por uma palavras-chave"
+                  placeholder="Busque por produtos"
                   classNames="search"
                   onChange={onSearchClickExample}
                 />
@@ -115,7 +115,8 @@ const Trabalhos = ({
                       styles={customStyles}
                       onChange={handleSelectChange}
                       options={cleanDuplicateValue}
-                      classNamePrefix='select-categoria'
+                      classNamePrefix="select-categoria"
+                      placeholder="Categorias"
                     />
                   </div>
                   <div className="produtos-col produtos-col-range">

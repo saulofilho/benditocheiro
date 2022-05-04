@@ -13,10 +13,9 @@ const FooterWrapper = () => {
         </div>
         <div className="infos">
           <a href="https://instagram.com/bendito-cheiro-art">
-            <Instagram color={"var(--orange)"} />
+            {/* <Instagram color={"var(--orange)"} /> /benditocheiroart */}
+            instagram.com/benditocheiroart
           </a>
-        </div>
-        <div className="infos">
           <p>ola@benditocheiroart.com</p>
         </div>
       </div>

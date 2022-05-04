@@ -9,6 +9,11 @@ footer .infos {
   align-items: flex-start;
   flex-flow: column;
 }
+footer .infos a {
+  font-family: var(--open-sans);
+  color: var(--orange);
+  font-size: 14px;
+}
 footer .infos a svg:hover {
   stroke: var(--orange);
 }

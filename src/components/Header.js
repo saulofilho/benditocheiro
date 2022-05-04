@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
-import { Menu, X } from 'react-feather'
+import { AlignRight, X } from 'react-feather'
 import 'prismjs/themes/prism-okaidia.css'
 import ThemeChanger from "./ThemeChanger"
 import './Header.scss'
@@ -48,7 +48,7 @@ const Header = () => {
               className="x"
             />
             :
-            <Menu
+            <AlignRight
               color={"var(--orange)"}
               className="menu"
             />}

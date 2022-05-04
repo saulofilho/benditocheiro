@@ -54,18 +54,18 @@
   .sobre-wrapper h1 {
     font-size: 40px;
     line-height: 35px;
-    padding-left: 15%;
+    padding-left: unset;
   }
-  .sobre-row {
+  .sobre-wrapper .sobre-row {
     flex-flow: column;
   }
-  .sobre-col img {
+  .sobre-wrapper .sobre-col img {
     padding-bottom: 10px;
   }
-  .sobre-col p {
+  .sobre-wrapper .sobre-col p {
     padding-bottom: 10px;
   }
-  .sobre-col {
+  .sobre-wrapper .sobre-col {
     align-items: center;
   }
   .sobre-wrapper .sobre-col p {

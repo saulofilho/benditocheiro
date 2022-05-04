@@ -23,7 +23,7 @@ const Home = () => {
           BENDITO CHEIRO
           <TypeAnimation
             cursor={false}
-            sequence={['ART', 3000, 'ARTESANAL', 3000]}
+            sequence={['ART', 3000, 'ARTESANAL', 3000, 'ARTE', 3000, 'ARTESANATO', 3000]}
             repeat={Infinity}
           />
         </h1>

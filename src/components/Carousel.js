@@ -3,11 +3,7 @@ import Slider from "react-slick"
 import './Carousel.scss'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import Chapada from '../../static/assets/default-img.jpg'
-import Nobres from '../../static/assets/default-img.jpg'
-import Pantanal from '../../static/assets/default-img.jpg'
-import Araguaia from '../../static/assets/default-img.jpg'
-import Barra from '../../static/assets/default-img.jpg'
+import defaultImg from '../../static/assets/default-img.jpg'
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -15,7 +11,7 @@ const Carousel = () => {
   const settings = {
     className: "slider variable-width",
     centerMode: true,
-    infinite: true,
+    infinite: false,
     centerPadding: "60px",
     slidesToShow: 1,
     speed: 500,
@@ -24,12 +20,16 @@ const Carousel = () => {
     autoplaySpeed: 4000,
     pauseOnHover: true,
     variableWidth: true,
+    edgeFriction: 1,
+    swipeToSlide: true,
+    accessibility: true,
     responsive: [
       {
         breakpoint: 440,
         settings: {
           variableWidth: false,
           centerMode: false,
+          infinite: true,
         }
       }
     ]
@@ -62,65 +62,65 @@ const Carousel = () => {
           <div
             className="car-items-wrapper"
             style={{
-              backgroundImage: `url(${Chapada})`
+              backgroundImage: `url(${defaultImg})`
             }}
-            alt="foto da chapada dos guimaraes"
+            alt="foto da defaultImg dos guimaraes"
           >
           </div>
           <p className="car-text">
-            Chapada dos Guimarães
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </p>
         </div>
         <div>
           <div
             className="car-items-wrapper"
             style={{
-              backgroundImage: `url(${Nobres})`
+              backgroundImage: `url(${defaultImg})`
             }}
-            alt="foto de Nobres"
+            alt="foto de defaultImg"
           >
           </div>
           <p className="car-text">
-            Nobres
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </p>
         </div>
         <div>
           <div
             className="car-items-wrapper"
             style={{
-              backgroundImage: `url(${Araguaia})`
+              backgroundImage: `url(${defaultImg})`
             }}
-            alt="foto do Araguaia"
+            alt="foto do defaultImg"
           >
           </div>
           <p className="car-text">
-            Alto Araguaia
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </p>
         </div>
         <div>
           <div
             className="car-items-wrapper"
             style={{
-              backgroundImage: `url(${Barra})`
+              backgroundImage: `url(${defaultImg})`
             }}
-            alt="foto do Barra"
+            alt="foto do defaultImg"
           >
           </div>
           <p className="car-text">
-            Barra do Garças
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </p>
         </div>
         <div>
           <div
             className="car-items-wrapper"
             style={{
-              backgroundImage: `url(${Pantanal})`
+              backgroundImage: `url(${defaultImg})`
             }}
-            alt="foto do Pantanal"
+            alt="foto do defaultImg"
           >
           </div>
           <p className="car-text">
-            Pantanal
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </p>
         </div>
       </Slider>
