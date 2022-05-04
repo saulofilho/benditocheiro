@@ -33,12 +33,12 @@ export default function Template({
               ))}
             </div>
           </div>
-          <div className="post-col post-sticky" data-aos="fade-down">
+          <div className="post-col post-sticky">
             <h1>
               {post.frontmatter.title}
             </h1>
-            <p>{post.frontmatter.categoria}</p>
-            <p>{post.frontmatter.preco}</p>
+            <p className="blog-post-category">{post.frontmatter.categoria}</p>
+            <p className="blog-post-price">R$ {post.frontmatter.preco}</p>
             <div className="site-wrapper">
               <div
                 className="blog-post-content"

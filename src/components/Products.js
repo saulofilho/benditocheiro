@@ -15,7 +15,7 @@ const Products = ({ post }) => {
     });
   }, []);
 
-  const storiesPerPage = 3;
+  const postsPerPage = 10;
 
   const [data, setData] = useState([...Posts]);
   const [currentData, setCurrentData] = useState([]);
@@ -24,7 +24,7 @@ const Products = ({ post }) => {
   const loopWithSlice = () => {
     const toShow = Posts.slice(
       currentData.length,
-      currentData.length + storiesPerPage
+      currentData.length + postsPerPage
     );
     setCurrentData([...currentData, ...toShow]);
   };
@@ -34,13 +34,13 @@ const Products = ({ post }) => {
   }, [data]);
 
   useEffect(() => {
-    setCurrentData(data.slice(0, storiesPerPage));
+    setCurrentData(data.slice(0, postsPerPage));
   }, [data]);
 
   const handleShowMorePosts = () => {
-    let loadedMore = next + storiesPerPage;
+    let loadedMore = next + postsPerPage;
     loopWithSlice(next, loadedMore);
-    setNext(next + storiesPerPage);
+    setNext(next + postsPerPage);
   };
 
   return (
