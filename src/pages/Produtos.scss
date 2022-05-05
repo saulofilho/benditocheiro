@@ -132,6 +132,13 @@
   align-items: center;
 }
 @media (max-width: 576px) {
+  .produtos-wrapper h1 {
+    text-align: left;
+    line-height: 45px;
+  }
+  .produtos-wrapper .produtos-text {
+    text-align: left;
+  }
   .produtos-wrapper .produtos-row {
     flex-flow: column;
   }

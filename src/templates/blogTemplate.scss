@@ -103,7 +103,7 @@
     top: unset;
     padding-left: unset;
   }
-  .Blog-post img {
+  .Blog-post img:first-child {
     padding-top: 20px;
   }
 }

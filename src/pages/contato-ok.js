@@ -6,7 +6,7 @@ const ContatoOK = () => {
   return (
     <Layout>
       <div className="contato-ok-wrapper container">
-        <h1>Et harum quidem rerum facilis est et expedita distinctio. :)</h1>
+        <h1>Sua mensagem foi enviada com sucesso. :)</h1>
       </div>
     </Layout>
   )

@@ -25,6 +25,7 @@ const Trabalhos = ({
   const [currentData, setCurrentData] = useState([]);
   const [offset, setOffset] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [price, setPrice] = useState(10);
 
   useEffect(() => {
     setData(data);
@@ -44,8 +45,8 @@ const Trabalhos = ({
   }
 
   const handleSelectChange = e => {
-    const filteredDates = posts.filter(a => a.frontmatter.categoria_produto.map(el => el.categoria_list).toString() === e.value);
-    setData(filteredDates);
+    const filteredPosts = posts.filter(a => a.frontmatter.categoria_produto.map(el => el.categoria_list).toString() === e.value);
+    setData(filteredPosts);
   };
 
   const addValue = posts.map(el => {
@@ -63,9 +64,11 @@ const Trabalhos = ({
     return unique;
   }, []);
 
-  const [ price, setPrice ] = useState(40);
-  const handleInput = (e)=>{
-    setPrice( e.target.value );
+  const handleInput = e =>{
+    e.preventDefault();
+    const filteredPosts = posts.filter(a => parseInt(a.frontmatter.preco.replace(/,/g, ''), 10) > parseInt(price, 10));
+    setData(filteredPosts);
+    setPrice(e.target.value);
   }
 
   const customStyles = {
@@ -121,8 +124,8 @@ const Trabalhos = ({
                   </div>
                   <div className="produtos-col produtos-col-range">
                     <div className="produtos-row">
-                      <input id="myRange" type="range" onInput={handleInput} min="1" max="100" />
-                      <p className="price">Preço: {price}</p>
+                      <input id="myRange" type="range" onInput={handleInput} min="1" max="10000" />
+                      <p className="price">Preço: {price.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ",")}</p>
                     </div>
                   </div>
                 </div>
