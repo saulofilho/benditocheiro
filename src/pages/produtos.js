@@ -133,7 +133,7 @@ const Trabalhos = ({
             </div>
           </div>
         </div>
-        {!!currentData.length ? <PostSection posts={currentData}/> : <p className="search-result-none">Nenhuma palavra-chave encontrada.</p>}
+        {!!currentData.length ? <PostSection posts={currentData}/> : <p className="search-result-none">Nenhuma produto encontrado.</p>}
         <Paginator
           totalRecords={data.length}
           pageLimit={pageLimit}

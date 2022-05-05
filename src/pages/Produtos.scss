@@ -131,6 +131,10 @@
 .produtos-col-range .produtos-row {
   align-items: center;
 }
+.search-result-none {
+  font-size: 14px;
+  font-family: var(--open-sans) !important;
+}
 @media (max-width: 576px) {
   .produtos-wrapper h1 {
     text-align: left;
