@@ -21,7 +21,7 @@ const FooterWrapper = () => {
       </div>
       <div className="copyright">
         <p>
-          Copyright © 2022 BENDITO CHEIRO ARTASANAL
+          Copyright © 2022 BENDITO CHEIRO ARTESANAL
           <br />
           All rights reserved.
         </p>
