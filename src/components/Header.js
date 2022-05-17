@@ -34,9 +34,9 @@ const Header = () => {
         </div>
         <ThemeChanger />
         <div className="header-right-desk">
-          <Link to={"/#sobre"}>sobre</Link>
-          <Link to={"/produtos"}>produtos</Link>
-          <Link to={"/#contato"}>contato</Link>
+          <Link to={"/#sobre"}>SOBRE</Link>
+          <Link to={"/produtos"}>PRODUTOS</Link>
+          <Link to={"/#contato"}>CONTATO</Link>
         </div>
         <button
           className="button-blank menu-button"

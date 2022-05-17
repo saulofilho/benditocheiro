@@ -40,9 +40,6 @@
   color: var(--orange);
   padding-right: 20px;
 }
-.header-right-desk a:hover {
-  color: var(--dark-gray);
-}
 .header-right-desk a:last-child {
   padding-right: 0px;
 }
@@ -53,7 +50,7 @@
   left: 2px;
 }
 .header-right-desk a:hover {
-  font-style: italic;
+  text-decoration: none;
   font-weight: bolder;
 }
 .logo-header {

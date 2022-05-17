@@ -130,6 +130,9 @@ body.light {
   cursor: pointer;
   color: var(--orange);
 }
+.mode-container:hover {
+  color: var(--light-gray);
+}
 // CSS.gg icons for sun and moon
 .gg-sun {
   box-sizing: border-box;
