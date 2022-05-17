@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-wrapper container">
-        <h1 data-aos="fade-right">
+        <h1>
           BENDITO CHEIRO
           <TypeAnimation
             cursor={false}

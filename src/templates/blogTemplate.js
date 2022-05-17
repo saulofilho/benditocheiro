@@ -48,7 +48,7 @@ export default function Template({
           </div>
         </article>
         <div className="voltar">
-          <Link to="/produtos">⟵ Voltar</Link>
+          <Link to="/produtos">⟵ VOLTAR</Link>
         </div>
       </div>
     </Layout>

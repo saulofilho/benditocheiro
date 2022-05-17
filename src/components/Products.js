@@ -45,12 +45,12 @@ const Products = ({ post }) => {
 
   return (
     <div className="products-wrapper container" id="produtos">
-      <h1 data-aos="fade-up">Produtos bendito cheiro</h1>
+      <h1>Produtos bendito cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">
         </div>
         <div className="sobre-col">
-          <p data-aos="fade-down">
+          <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
             veritatis et quasi architecto beatae vitae dicta sunt explicabo.

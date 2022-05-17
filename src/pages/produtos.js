@@ -94,13 +94,13 @@ const Trabalhos = ({
     <Layout>
       <div className="produtos-home container">
         <div className="produtos-wrapper">
-          <h1 data-aos="fade-up">
+          <h1>
             Confira os nossos produtos
           </h1>
-          <p className="produtos-text" data-aos="fade-down">
+          <p className="produtos-text">
             The standard Lorem Ipsum passage, used since the 1500s
           </p>
-          <div className="produtos-wrapper-row" data-aos="fade-up">
+          <div className="produtos-wrapper-row">
             <div className="produtos-row">
               <div className="produtos-col produtos-col-padding">
                 <SearchField
@@ -133,7 +133,7 @@ const Trabalhos = ({
             </div>
           </div>
         </div>
-        {!!currentData.length ? <PostSection posts={currentData}/> : <p className="search-result-none">Nenhuma produto encontrado.</p>}
+        {!!currentData.length ? <PostSection posts={currentData} data-aos="fade-up" /> : <p className="search-result-none">Nenhuma produto encontrado.</p>}
         <Paginator
           totalRecords={data.length}
           pageLimit={pageLimit}
