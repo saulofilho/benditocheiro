@@ -19,7 +19,7 @@ const IndexPage = ({
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
-        <script src={withPrefix('script.js')} type="text/javascript" />
+        <script async defer src={withPrefix('script.js')} type="text/javascript" />
       </Helmet>
       <Home />
       <About />
