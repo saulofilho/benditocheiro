@@ -45,7 +45,7 @@ const Products = ({ post }) => {
 
   return (
     <div className="products-wrapper container" id="produtos">
-      <h1>Produtos bendito cheiro</h1>
+      <h1>Produtos Bendito Cheiro</h1>
       <div className="sobre-row">
         <div className="sobre-col">
         </div>
@@ -57,7 +57,7 @@ const Products = ({ post }) => {
           </p>
         </div>
       </div>
-      <div className="posts-list" data-aos="fade-up">
+      <div className="posts-list">
         {currentData}
       </div>
       {currentData.length < Posts.length && (

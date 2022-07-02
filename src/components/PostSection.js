@@ -15,7 +15,7 @@ const PostSection = ({
 
   return (
     <>
-      <div className="post-item-section" data-aos="fade-up">
+      <div className="post-item-section">
         {posts.map(post => (
           <div className="post-item" key={post.id}>
             <Link to={post.fields.slug} className="post-link">

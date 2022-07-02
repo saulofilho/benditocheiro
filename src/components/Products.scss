@@ -22,7 +22,7 @@
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 .products-wrapper .sobre-col {
   width: 100%;
@@ -48,7 +48,7 @@
   padding-top: 50px;
 }
 .products-wrapper .btn-wrapper button {
-  border: 1px solid white;
+  border: 1px solid var(--text-color);
   font-family: var(--open-sans);
   text-align: center;
   padding: 20px;
@@ -70,6 +70,7 @@
   }
   .products-wrapper .sobre-row {
     flex-flow: column;
+    padding: 20px 0;
   }
   .products-wrapper .sobre-col img {
     padding-bottom: 10px;

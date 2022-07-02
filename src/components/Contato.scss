@@ -52,7 +52,7 @@
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 .contato-wrapper h1 {
   font-family: var(--barlow);
@@ -72,7 +72,6 @@ form {
   align-items: center;
   flex-flow: column;
   width: 100%;
-  padding-top: 50px;
 }
 .form-texts {
   width: 100%;
@@ -122,6 +121,7 @@ form button[type=submit]:hover {
 @media (max-width: 576px) {
   .contato-wrapper .sobre-row {
     flex-flow: column;
+    padding: 20px 0;
   }
   .contato-wrapper h1 {
     font-size: 40px;
@@ -138,7 +138,7 @@ form button[type=submit]:hover {
     font-size: 14px;
   }
   .contato-wrapper img {
-    padding-top: 50px;
+    padding-top: 20px;
     max-width: 100%;
     width: 100%;
     padding-right: unset;

@@ -20,7 +20,9 @@ const Home = () => {
       </div>
       <div className="home-wrapper container">
         <h1>
-          BENDITO CHEIRO
+          BENDITO
+          <br />
+          CHEIRO
           <TypeAnimation
             cursor={false}
             sequence={['ART', 3000, 'ARTESANAL', 3000, 'ARTE', 3000, 'ARTESANATO', 3000]}

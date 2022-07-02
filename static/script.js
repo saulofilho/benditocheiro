@@ -30,3 +30,6 @@ var run = function () {
 };
 
 run();
+
+
+// https://stackoverflow.com/questions/69480486/gatsby-site-script-not-available-on-first-page-request-with-helmet

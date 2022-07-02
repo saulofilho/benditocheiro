@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 10px;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 .sobre-col {
   width: 100%;
@@ -58,6 +58,7 @@
   }
   .sobre-wrapper .sobre-row {
     flex-flow: column;
+    padding: 20px 0;
   }
   .sobre-wrapper .sobre-col img {
     padding-bottom: 10px;

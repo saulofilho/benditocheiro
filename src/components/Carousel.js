@@ -16,7 +16,7 @@ const Carousel = () => {
     slidesToShow: 1,
     speed: 500,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     variableWidth: true,
@@ -44,7 +44,7 @@ const Carousel = () => {
   return (
     <section>
       <div className="carousel-wrapper container">
-        <h1>Como funciona a bendito cheiro</h1>
+        <h1>Como funciona a Bendito Cheiro</h1>
         <div className="sobre-row">
           <div className="sobre-col">
           </div>

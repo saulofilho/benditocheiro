@@ -63,7 +63,7 @@
 }
 .logo-header img {
   max-width: 100%;
-  width: 60px;
+  width: 220px;
 }
 .menu-button {
   display: none;
@@ -108,6 +108,15 @@
     padding-top: 30px;
   }
   .header-wrapper-active #img-bg {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo-header img {
+    max-width: 100%;
+    width: 160px;
+  }
+  .header-wrapper .mode-container {
     display: none;
   }
 }
