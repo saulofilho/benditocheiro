@@ -90,7 +90,7 @@
   background-color: var(--orange) !important;
 }
 .select-categoria__option.select-categoria__option--is-focused {
-  background-color: var(--dark-gray) !important;
+  background-color: unset !important;
 }
 .select-categoria__menu-list {
   border: 2px solid var(--orange) !important;

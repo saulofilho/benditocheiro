@@ -1,5 +1,5 @@
 import React from "react"
-import { Instagram, Film } from 'react-feather'
+// import { Instagram, Film } from 'react-feather'
 import './Footer.scss'
 
 const FooterWrapper = () => {
