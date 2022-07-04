@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import './blogTemplate.scss'
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import ModalImage from 'react-modal-image';
 
 export default function Template({
   data,
@@ -26,10 +27,17 @@ export default function Template({
       <div className="Blog-post container">
         <article className="post-row">
           <div className="post-col">
-            <div className="post-imgs" data-aos="fade-up">
-              <img src={post.frontmatter.img} alt={post.frontmatter.img} />
+            <div className="post-imgs">
+              <ModalImage
+                small={post.frontmatter.img}
+                large={post.frontmatter.img}
+                alt={post.frontmatter.title}
+              />
               {post.frontmatter.img_produto && post.frontmatter.img_produto.map(post => (
-                <img src={post.img_list} alt={post.img_list} key={post.img_list} />
+                <ModalImage
+                  small={post.img_list}
+                  large={post.img_list}
+                />
               ))}
             </div>
           </div>
