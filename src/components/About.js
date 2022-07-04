@@ -13,14 +13,14 @@ const About = () => {
 
   return (
     <div className="sobre-wrapper container" id="sobre">
-      <h1>Sobre a marca Bendito Cheiro</h1>
+      <h1 className="title">Você já conhece a Bendito Cheiro Art?</h1>
       <div className="sobre-row">
         <div className="sobre-col">
           <img src={Chapada} alt="sobre somos nós foto" className="img-festa" data-aos="fade-right"/>
         </div>
         <div className="sobre-col">
-          <p>
-          A bendito cheiro art foi criada por uma mulher desde de 2017, que ama colorir a vida com seu pincel,
+          <p className="text">
+          A Bendito Cheiro Art foi criada por uma mulher desde de 2017, que ama colorir a vida com seu pincel,
           da telas para a maquiagem e aroma foi um estalar de dedos.
           <br />
           <br />

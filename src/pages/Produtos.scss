@@ -12,12 +12,6 @@
   text-align: center;
   padding-bottom: 50px;
 }
-.produtos-wrapper h1 {
-  font-family: var(--barlow);
-  font-size: 80px;
-  font-weight: bolder;
-  line-height: 50px;
-}
 .produtos-wrapper .produtos-text {
   font-family: var(--open-sans);
   font-size: 18px;
@@ -143,11 +137,6 @@
   color: var(--dark-gray);
 }
 @media (max-width: 576px) {
-  .produtos-wrapper h1 {
-    text-align: left;
-    line-height: 30px;
-    font-size: 40px;
-  }
   .produtos-wrapper .produtos-text {
     text-align: left;
   }

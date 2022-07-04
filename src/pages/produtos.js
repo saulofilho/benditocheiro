@@ -94,7 +94,7 @@ const Trabalhos = ({
     <Layout>
       <div className="produtos-home container">
         <div className="produtos-wrapper">
-          <h1>
+          <h1 className="title">
             Confira os nossos produtos
           </h1>
           <p className="produtos-text">

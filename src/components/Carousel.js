@@ -44,12 +44,12 @@ const Carousel = () => {
   return (
     <section>
       <div className="carousel-wrapper container">
-        <h1>Como funciona a Bendito Cheiro</h1>
+        <h1 className="title">Veja as etapas de criação da Bendito Cheiro Art.</h1>
         <div className="sobre-row">
           <div className="sobre-col">
           </div>
           <div className="sobre-col">
-            <p>
+            <p className="text">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
               veritatis et quasi architecto beatae vitae dicta sunt explicabo.

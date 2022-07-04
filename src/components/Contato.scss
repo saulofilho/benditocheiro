@@ -54,18 +54,6 @@
   align-items: flex-start;
   padding: 50px 0 20px 0;
 }
-.contato-wrapper h1 {
-  font-family: var(--barlow);
-  font-size: 80px;
-  text-align: left;
-  font-weight: bolder;
-  line-height: 70px;
-  padding-left: 25%;
-}
-.contato-wrapper p {
-  font-family: var(--open-sans);
-  font-size: 18px;
-}
 form {
   display: flex;
   justify-content: center;
@@ -122,11 +110,6 @@ form button[type=submit]:hover {
   .contato-wrapper .sobre-row {
     flex-flow: column;
     padding: 20px 0;
-  }
-  .contato-wrapper h1 {
-    font-size: 40px;
-    line-height: 35px;
-    padding-left: unset;
   }
   .contato-wrapper {
     padding-top: 100px;

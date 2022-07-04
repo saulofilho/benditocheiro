@@ -65,6 +65,19 @@ button {
   background: transparent;
   border: initial;
 }
+.title {
+  font-family: var(--barlow);
+  font-size: 60px;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 70px;
+  padding-left: 25%;
+  text-decoration: underline;
+}
+.text {
+  font-family: var(--open-sans);
+  font-size: 16px;
+}
 .container {
   margin: 0 auto;
   max-width: 1440px;
@@ -102,6 +115,11 @@ h5 {
   font-family: var(--open-sans);
 }
 @media (max-width: 576px) {
+  .title {
+    font-size: 40px;
+    line-height: 35px;
+    padding-left: unset;
+  }
   .container {
     max-width: 540px;
     padding: 20px 20px;
