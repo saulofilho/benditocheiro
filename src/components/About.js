@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './About.scss'
-import Chapada from '../../static/assets/default-img.jpg'
+import AboutIMG from '../../static/assets/images/sabonetes.jpg'
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -16,7 +16,7 @@ const About = () => {
       <h1 className="title">Você já conhece a Bendito Cheiro Art?</h1>
       <div className="sobre-row">
         <div className="sobre-col">
-          <img src={Chapada} alt="sobre somos nós foto" className="img-festa" data-aos="fade-right"/>
+          <img src={AboutIMG} alt="sobre somos nós foto" className="img-about" data-aos="fade-up"/>
         </div>
         <div className="sobre-col">
           <p className="text">
@@ -37,6 +37,29 @@ const About = () => {
           <br />
           Além de tudo isso, ainda cria seu aroma com o marketing olfativo para você ou para sua empresa.
           São muitos aromas e cores.Sempre preocupada com as pessoas, animais e com o meio ambiente, por isso suas embalagens são BIO.
+          <br />
+          <br />
+          <br />
+          <strong>Como funciona ou nossa missão?</strong>
+          <br />
+          <br />
+          A Bendito quer passar boas sensações  para seus clientes, colaboradores e fornecedores prezando sempre
+          pela natureza e agregando seus benefícios aos nossos produtos. Valorizamos o que vem da terra e as pessoas que
+          extraem da terra com sustentabilidade e fazem dela e da arte sua fonte de renda, por isso, nossas principais
+          matérias primas naturais são compradas de pequenas cooperativas.
+          <br />
+          <br />
+          <br />
+          <strong>Produtos Bendito Cheiro para:</strong>
+          <br />
+          <br />
+          Corpo
+          <br />
+          Cabelo
+          <br />
+          Skincare
+          <br />
+          Casa
           </p>
         </div>
       </div>
