@@ -55,7 +55,6 @@ export const pageQuery = graphql`
             date(formatString: "DD.MM.YYYY")
             img
             title
-            categoria
             preco
             img_produto {
               img_list

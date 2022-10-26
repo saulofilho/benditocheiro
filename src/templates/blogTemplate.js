@@ -45,7 +45,7 @@ export default function Template({
             <h1>
               {post.frontmatter.title}
             </h1>
-            <p className="blog-post-category">{post.frontmatter.categoria}</p>
+            <p className="blog-post-category">{post.frontmatter.categoria_produto[0].categoria_list}</p>
             <p className="blog-post-price">R$ {post.frontmatter.preco}</p>
             <div className="site-wrapper">
               <div
@@ -71,10 +71,12 @@ export const pageQuery = graphql`
         date(formatString: "DD.MM.YYYY")
         img
         title
-        categoria
         preco
         img_produto {
           img_list
+        }
+        categoria_produto {
+          categoria_list
         }
       }
     }
